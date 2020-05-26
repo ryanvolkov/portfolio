@@ -258,29 +258,3 @@ h2 {
     color: #b2b2b2;
     font-size: 24px;
 }
-
-@media (max-width: 846px) {
-
-    .clients {
-        grid-template: repeat(1, 1fr) / repeat(3, 33%);
-    }
-    
-    .team {
-        grid-template: repeat(3, 1fr) / repeat(2, 50%);
-    }
-    }
-
-@media (max-width: 715px) {
-    .services_list {
-        display:block;
-    }
-}
-
-@media (max-width: 558px) {
-    .clients {
-        grid-template: repeat(1, 1fr) / repeat(2, 50%);
-    }
-    .team {
-        grid-template: repeat(3, 1fr) / repeat(1, 100%);
-    } 
-}
