@@ -1,3 +1,5 @@
+@import 'all.css';
+
 body {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -197,6 +199,12 @@ h2 {
 
 .box__item.project img{
     max-width: none;
+}
+
+@media (max-width: 500px) {
+    .box__item.project {
+        height: 200px;
+    }
 }
 
 /*---------------------------------------------*/
