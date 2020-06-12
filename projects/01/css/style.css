@@ -409,3 +409,64 @@ header {
     display: block;
     width: 100%;
 }
+
+.form__box-inner label {
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    color:#282828 ;
+}
+
+.form__box-inner input {
+    margin-bottom: 8px;
+    outline: none;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+}
+
+.form__box-inner select {
+    outline: none;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding-left: 17px;
+}
+
+.form__box-inner textarea {
+    height: 207px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    resize: none;
+    margin-bottom: 40px;
+}
+
+.form__box-inner button {
+    background-color: transparent;
+    color: #282828;
+    float: right;
+}
+
+.advantages {
+    background-image: url(../img/adv-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 285px;
+    padding: 55px 0px 40px;
+}
+
+.advantages__inner {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    max-width: 360px;
+    padding: 0px 20px;
+}
+
+.advantages__title {
+    
+}
