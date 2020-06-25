@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Roman Volkov: Home Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
     <link rel="icon" href="img/favicon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header">
-            <a href="" class="logo">
-                <span class="logo_img"></span>
-                <span class="logo_text">Roman Volkov</span>
+    <header class="header">
+        <div class="header__top">
+            <a href="#" class="logo">
+                <span class="logo__img"></span>
+                <span class="logo__text">Roman Volkov</span>
             </a>
-            <nav>
+            <nav class="menu">
                 <ul class="nav">
                     <li><a href="#services">Link</a></li>
                     <li><a href="#clients">Link</a></li>
                     <li><a href="#team">Link</a></li>
-                    <li><button class="nav_btn" type="button">Button</button></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="info">
-        <div class="wrap">
-            <div class="info__img">
-                <a href="#"><img src="img/photo.png" alt="Roman Volkov"></a>
+        <div class="container">
+            <div class="info__box">
+                <div class="info__img">
+                    <img src="img/photo.png" alt="Roman Volkov">
+                </div>
+                <div class="info__box-content">
+                    Hi, my name is <p>Roman Volkov</p> and i am a Web developer based in Warsaw.
+                </div>
+                <div class="info__btn">
+                    <a href=""><img src="img/down-arrow.svg"></a>
+                </div>
             </div>
-                <h1 class="title_main">Roman Volkov</h1>
-            <p class="text_main">Web developer. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button type="button" class="button">Button</button>
         </div>
     </section>
     <section class="page page_top">
-        <div class="wrap">
+        <div class="container">
             <h2 class="services">Knowledge?</h2>
             <div class="container__page">
                 <div class="page__box">
@@ -85,7 +94,7 @@
         </div>
     </section>
     <section class="page page_top">
-        <div class="wrap">
+        <div class="container">
             <h2 class="services">Section two</h2>
             <div class="container__page">
                 <div class="page__box">
@@ -105,25 +114,26 @@
             </div>
         </div>
     </section>
-    <section class="page page_top">
-        <div class="wrap">
+    <section class="page page__top">
+        <div class="container">
             <h2 class="services">Section two</h2>
 
         </div>
     </section>
     <footer class="footer">
         <div class="footer">
-            <div class="wrap box_footer">
-                 <a href="#"><img src="assets/img/logo.svg" alt=""></a>
-                 <ul class="social">
+            <div class="container box__footer">
+                <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                <ul class="social">
                     <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fab fa-codepen"></i></a></li>
-                 </ul>
+                </ul>
             </div>
         </div>
     </footer>
-<script defer src="js/all.js"></script>
+    <script defer src="js/all.js"></script>
 </body>
+
 </html>
