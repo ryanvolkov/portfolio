@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- https://www.youtube.com/watch?v=izqR0UY11rk&t=132s -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,6 +12,7 @@
     <link rel="icon" href="img/favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -22,11 +23,16 @@
                 <span class="logo__text">Roman Volkov</span>
             </a>
             <nav class="menu">
-                <ul class="nav">
-                    <li><a href="#services">Link</a></li>
-                    <li><a href="#clients">Link</a></li>
-                    <li><a href="#team">Link</a></li>
+                <ul class="nav" id="menu">
+                    <li><a href="#technologies">knowledge</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
+                <div class="mobile-bar" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -45,12 +51,12 @@
             </div>
         </div>
     </section>
-    <section class="page page_top">
+    <section class="technologies">
         <div class="container">
-            <h2 class="services">Knowledge?</h2>
-            <div class="container__page">
-                <div class="page__box">
-                    <h2>technologies</h2>
+            <h2 class="section__title" id="technologies">Knowledge?</h2>
+            <div class="technologies__box">
+                <div class="technologies__title">Currently work with technologies and tools</div>
+                <div class="technologies__box-inner">
                     <div class="box__item logo">
                         <img src="img/Technologies/html.svg" alt="">
                     </div>
@@ -59,9 +65,37 @@
                     </div>
                     <div class="box__item logo">
                         <img src="img/Technologies/js.svg" alt="">
+                    </div>                    
+                    <div class="box__item logo">
+                        <img src="img/Technologies/gulp.svg" alt="">
                     </div>
                     <div class="box__item logo">
-                        <img src="img/Technologies/es6.svg" alt="">
+                        <img src="img/Technologies/wp-icon.svg" alt="">
+                    </div>
+                    <div class="box__item logo">
+                        <img src="img/Technologies/git.svg" alt="">
+                    </div>
+                </div>
+                <div class="technologies__title">software</div>
+                <div class="technologies__box-inner">
+                    <div class="box__item logo">
+                        <img src="img/Technologies/vscode.svg" alt="">
+                    </div>
+                    <div class="box__item logo">
+                        <img src="img/Technologies/ps.svg" alt="">
+                    </div>
+                    <div class="box__item logo">
+                        <img src="img/Technologies/ai.svg" alt="">
+                    </div>
+                    <div class="box__item logo">
+                        <img src="img/Technologies/figma.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="technologies__title">Basic knowledge</div>
+                <div class="technologies__box-inner">
+                    <div class="box__item logo">
+                        <img src="img/Technologies/jquery.svg" alt="">
                     </div>
                     <div class="box__item logo">
                         <img src="img/Technologies/php.svg" alt="">
@@ -69,71 +103,99 @@
                     <div class="box__item logo">
                         <img src="img/Technologies/python.svg" alt="">
                     </div>
-                </div>
-                <div class="page__box">
                     <div class="box__item logo">
-                        <img src="img/Technologies/git.svg" alt="">
+                        <img src="img/Technologies/react.svg" alt="">
                     </div>
                     <div class="box__item logo">
-                        <img src="img/Technologies/gitlab.svg" alt="">
+                        <img src="img/Technologies/vue.svg" alt="">
                     </div>
                     <div class="box__item logo">
-                        <img src="img/Technologies/github.svg" alt="">
-                    </div>
-                    <div class="box__item logo">
-                        <img src="img/Technologies/terminal.svg" alt="">
-                    </div>
-                    <div class="box__item logo">
-                        <img src="img/Technologies/macos.svg" alt="">
-                    </div>
-                    <div class="box__item logo">
-                        <img src="img/Technologies/asana.svg" alt="">
+                        <img src="img/Technologies/android.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="page page_top">
+    <section class="projects">
         <div class="container">
-            <h2 class="services">Section two</h2>
-            <div class="container__page">
-                <div class="page__box">
+            <h2 class="section__title" id="projects">latest projects</h2>
+            <div class="projects__box">
+                <div class="projects__box-inner">
                     <div class="box__item project">
-                        <img src="img/img.jpg" alt="">
+                        <a href="projects/templates/01/index.html" target="_blank"><img src="img//projectsimg/00lawagencysmall.jpg" alt="Law Agency"></a>
                     </div>
-                    <div class="box__item project">
-                        <img src="img/img.jpg" alt="">
-                    </div>
-                    <div class="box__item project">
-                        <img src="img/img.jpg" alt="">
-                    </div>
-                    <div class="box__item project">
-                        <img src="img/img.jpg" alt="">
-                    </div>
+                </div>
+                <div class="projects__btn">
+                    <a href="#">show more</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="page page__top">
+    <section class="about">
         <div class="container">
-            <h2 class="services">Section two</h2>
+            <h2 class="section__title" id="about">about me</h2>
+            <div class="about__content">
+                Родился в Украине, переехал в Польшу на пмж в 2015 году. В 2019 году в городе Варшава закончил высшее
+                учебное заведение и получил диплом Bachelor's degree in Management. В данный момент занимаюсь
+                администратированием сайтов Wordpress и маркетингом. Интересуюсь веб технологиями и фронтендом, в
+                свободное время учусь новому.
+                <div class="about__title">
+                    Languages
+                </div>
+                <div class="about__text">
+                    <ul>
+                        <li>&#x1F1F5;&#x1F1F1; advanced</li>
+                        <li>&#x1F1EC;&#x1F1E7; intermediate</li>
+                        <li>&#x1F1F7;&#x1F1FA; native</li>
+                        <li>&#x1F1FA;&#x1F1E6; advanced</li>
+                    </ul>
 
+                </div>
+                <div class="about__title">
+                    Hobbies
+                </div>
+                <div class="about__text">
+                    <ul>
+                        <li>&#x1F4BB; Technologies</li>
+                        <li>&#x1F3D4;️ Traveling</li>
+                        <li>&#x1F3C3; Sport</li>
+                        <li>&#x1F680; Self-development</li>
+                        <li>&#x1F393; Eternal student</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="footer">
-            <div class="container box__footer">
-                <a href="#"><img src="assets/img/logo.svg" alt=""></a>
-                <ul class="social">
-                    <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-codepen"></i></a></li>
-                </ul>
+        <div class="footer__box">
+            <div class="container">
+                <div class="footer__box-inner">
+                    <div class="form__box">
+                        <form>
+                            <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                            <textarea name="text" class="feedback-input" placeholder="Your message"></textarea>
+                            <input type="submit" value="SUBMIT" />
+                    </div>
+                    <div class="footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156389.09663414987!2d20.920768704263946!3d52.23285463605696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarsaw!5e0!3m2!1sen!2spl!4v1593269257283!5m2!1sen!2spl"
+                            height="350" frameborder="0" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="copy__text">
+                        Copyright © 2020 Roman Volkov. All Rights Reserved.
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    <script defer src="js/all.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

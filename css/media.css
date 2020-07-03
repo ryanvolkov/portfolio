@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+    nav .mobile-bar {
+        display: flex;
+        z-index: 1;
+    }
+    nav ul {
+        opacity: 0;
+        max-height: 0px;
+        overflow: hidden;
+        visibility: none;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        background: #f1f1f1;
+        margin-left: -100%;
+    }
+    nav ul.active {
+        opacity: 1;
+        min-height: 500px;
+        right: 0;
+        margin-left: 0%;
+        background: #e1e1e1;
+    }
+    nav ul.active li {
+        display: block;
+    }
+    nav ul.active a {
+        display: block;
+    }
+}
